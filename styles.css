@@ -7,7 +7,8 @@ body {
   color: white;
 }
 
-header, footer {
+header,
+footer {
   background-color: black;
   width: 100%;
   height: 40px;
@@ -24,8 +25,7 @@ header, footer {
   border-radius: 20px;
   box-shadow: 10px 10px 20px black;
   padding: 20px;
-  background-color: rgba(8, 7, 7, 0.7);
-
+  background-color: rgba(8, 8, 7, 0.7);
 }
 
 .container h1 {
@@ -33,6 +33,8 @@ header, footer {
 }
 
 .container p {
+  margin: 5px auto;
+  width: 95%;
   font-size: 18px;
   margin-bottom: 40px;
   text-align: justify;
@@ -56,9 +58,22 @@ header, footer {
 }
 
 .container button:hover {
-   background-color: rgb(109, 106, 106);
-   color: white;
-   font-size: 18px;
-   border-radius: 10px;
-   height: 2.5rem;
-  }
+  background-color: rgb(109, 106, 106);
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  height: 2.5rem;
+}
+
+#show-result {
+  box-sizing: border-box;
+  width: 90%;
+  height: 3.5rem;
+  background: transparent;
+  border-radius: 10px;
+  margin: 20px auto 5px auto;
+  box-shadow: 5px 5px 10px black;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 18px;
+}
