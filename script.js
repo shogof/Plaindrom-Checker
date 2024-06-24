@@ -1,42 +1,46 @@
-const showResult = document.getElementById('show-result');
-const checkBtn = document.getElementById('check-btn');
-checkBtn.addEventListener('click', () => {
+document.getElementById("check-btn").addEventListener("click", function () {
   const userInput = document
-    .getElementById('text-input')
+    .getElementById("text-input")
     .value.trim()
     .toLowerCase();
 
-  if (userInput === '') {
-    showResult.textContent = 'Please input a value';
-    showResult.style.backgroundColor = 'rgba(244, 234, 54, 0.7)';
+  if (userInput === "") {
+    alert("Please input a value");
+    result.textContent = 'Please input a value';
+    result.style.backgroundColor = 'rgba(244, 234, 54, 0.7)';
     return;
   }
 
-  const cleanInput = userInput.replace(/[^a-z0-9]/g, '');
+  const cleanInput = userInput.replace(/[^a-z0-9]/g, ""); // Remove non-alphanumeric characters
 
-  if (cleanInput === '') {
-    showResult.textContent = 'Please input a valid text';
-    showResult.style.backgroundColor = 'rgba(244, 234, 54, 0.7)';
+  if (cleanInput === "") {
+    alert("Please input a valid alphanumeric text");
+    result.textContent = 'Please input a valid text';
+    result.style.backgroundColor = 'rgba(244, 234, 54, 0.7)';
     return;
   }
 
   function checkPalindrome(input) {
-    const len = input.length;
-    for (let i = 0; i < len / 2; i += 1) {
-      if (input[i] !== input[len - 1 - i]) {
-        return false;
-      }
+  const len = input.length;
+  for (let i = 0; i < len / 2; i++) {
+    if (input[i] !== input[len - 1 - i]) {
+      return false;
     }
-    return true;
   }
+  return true;
+}
 
   const isPalindrome = checkPalindrome(cleanInput);
 
   if (isPalindrome) {
-    showResult.textContent = `${userInput} is a palindrome`;
-    showResult.style.backgroundColor = 'rgba(127, 231, 168, 0.7)';
+    document.getElementById(
+      "result"
+    ).textContent = `${userInput} is a palindrome`;
+    result.style.backgroundColor = 'rgba(127, 231, 168, 0.7)';
   } else {
-    showResult.textContent = `${userInput} is not a palindrome`;
-    showResult.style.backgroundColor = 'rgba(247, 44, 44, 0.6)';
+    document.getElementById(
+      "result"
+    ).textContent = `${userInput} is not a palindrome`;
+    result.style.backgroundColor = 'rgba(247, 44, 44, 0.6)';
   }
 });
