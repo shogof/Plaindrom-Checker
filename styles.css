@@ -12,8 +12,9 @@ footer {
   background-color: black;
   width: 100%;
   height: 40px;
-  font-size: 25px;
+  font-size: 30px;
   padding: 10px;
+  text-align: center;
 }
 
 .container {
@@ -34,27 +35,31 @@ footer {
 
 .container p {
   margin: 5px auto;
-  width: 95%;
+  width: 85%;
   font-size: 18px;
   margin-bottom: 40px;
   text-align: justify;
 }
 
 .container input {
+  box-sizing: border-box;
   width: 65%;
   height: 2.2rem;
   border-radius: 5px;
   outline: none;
   border: none;
+  padding: 20px;
 }
 
 .container button {
-  width: 30%;
+  width: 25%;
+  margin-left: 10px;
+  border-radius: 5px;
   height: 2.4rem;
   transition: all 1.5s;
   font-size: 18px;
   border: none;
-  box-shadow: 2px 2px 3px rgba(247, 245, 245, 0.5);
+  box-shadow: 2px 2px 3px rgba(7, 7, 7, 0.5);
 }
 
 .container button:hover {
@@ -76,4 +81,31 @@ footer {
   text-align: center;
   padding-top: 15px;
   font-size: 18px;
+  transition: 2s;
+}
+
+#show-result:hover {
+  background-color: rgb(109, 106, 106);
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  border-radius: 10px;
+  height: 3.3rem;
+  font-weight: bold ;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 30rem;
+    background: transparent;
+    height: auto;
+    text-align: center;
+    margin: 5rem auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px black;
+    padding: 20px;
+    background-color: rgba(8, 8, 7, 0.7);
+  }
+}
+
+@media screen and (min-width: 1025px) {
 }
