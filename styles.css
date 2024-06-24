@@ -41,6 +41,10 @@ footer {
   text-align: justify;
 }
 
+.container span {
+  color: aqua;
+}
+
 .container input {
   box-sizing: border-box;
   width: 65%;
