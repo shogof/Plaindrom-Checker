@@ -11,7 +11,6 @@ document.getElementById('check-btn').addEventListener('click', () => {
   }
 
   const cleanInput = userInput.replace(/[^a-z0-9]/g, ''); 
-  
   if (cleanInput === '') {
     alert('Please input a valid alphanumeric text');
     return;
