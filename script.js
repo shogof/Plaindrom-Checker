@@ -1,6 +1,7 @@
+const checkBtn = document.getElementById('check-btn');
 const showResult = document.getElementById('show-result');
 
-document.getElementById('check-btn').addEventListener('click', function () {
+checkBtn.addEventListener('click', function () {
   const userInput = document
     .getElementById('text-input')
     .value.trim()
@@ -28,8 +29,6 @@ document.getElementById('check-btn').addEventListener('click', function () {
     showResult.style.backgroundColor = 'rgba(247, 44, 44, 0.6)';
   }
 });
-
-const isPalindrome = checkPalindrome(cleanInput);
 
 function checkPalindrome(input) {
   const len = input.length;
