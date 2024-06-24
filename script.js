@@ -30,14 +30,10 @@ document.getElementById('check-btn').addEventListener('click', () => {
   const isPalindrome = checkPalindrome(cleanInput);
 
   if (isPalindrome) {
-    document.getElementById(
-      'result'
-    ).textContent = `${userInput} is a palindrome`;
+    result.textContent = `${userInput} is a palindrome`;
     result.style.backgroundColor = 'rgba(127, 231, 168, 0.7)';
   } else {
-    document.getElementById(
-      'result'
-    ).textContent = `${userInput} is not a palindrome`;
+    result.textContent = `${userInput} is not a palindrome`;
     result.style.backgroundColor = 'rgba(247, 44, 44, 0.6)';
   }
 });
