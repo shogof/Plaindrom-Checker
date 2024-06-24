@@ -10,8 +10,8 @@ document.getElementById('check-btn').addEventListener('click', () => {
     return;
   }
 
-  const cleanInput = userInput.replace(/[^a-z0-9]/g, ''); // Remove non-alphanumeric characters
-
+  const cleanInput = userInput.replace(/[^a-z0-9]/g, ''); 
+  
   if (cleanInput === '') {
     alert('Please input a valid alphanumeric text');
     return;

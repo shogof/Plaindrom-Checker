@@ -74,7 +74,7 @@ footer {
   height: 2.5rem;
 }
 
-#show-result {
+#result {
   box-sizing: border-box;
   width: 90%;
   height: 3.5rem;
@@ -88,7 +88,7 @@ footer {
   transition: 2s;
 }
 
-#show-result:hover {
+#result:hover {
   background-color: rgb(109, 106, 106);
   color: rgb(0, 0, 0);
   font-size: 22px;
