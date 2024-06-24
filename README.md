@@ -4,6 +4,7 @@
 
 > 🔍 Welcome to our Palindrome Checker! Crafted with precision and passion, it's a delight for your mind and a joy for your browser. Dive into the elegance of HTML, CSS, and JavaScript as we unravel the mystery of palindromes. Explore the nuances of code with every keystroke and savor the simplicity of our user interface. Your interaction not only enriches your coding journey but also spices up our exploration of linguistic symmetry! Let's unravel this digital puzzle together! 🔍✨🔢
 
+## [Live](https://shogof.github.io/Plaindrom-Checker/)
 ## Demo 📸
 
 ![screenshot](image/s.png)
