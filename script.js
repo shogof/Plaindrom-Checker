@@ -1,4 +1,5 @@
-document.getElementById('check-btn').addEventListener('click', function () {
+let result = document.getElementById('result');
+document.getElementById('check-btn').addEventListener('click', () => {
   const userInput = document
     .getElementById('text-input')
     .value.trim()
@@ -6,7 +7,6 @@ document.getElementById('check-btn').addEventListener('click', function () {
 
   if (userInput === '') {
     alert('Please input a value');
-    result.textContent = 'Please input a value';
     result.style.backgroundColor = 'rgba(244, 234, 54, 0.7)';
     return;
   }
@@ -15,14 +15,13 @@ document.getElementById('check-btn').addEventListener('click', function () {
 
   if (cleanInput === '') {
     alert('Please input a valid alphanumeric text');
-    result.textContent = 'Please input a valid text';
     result.style.backgroundColor = 'rgba(244, 234, 54, 0.7)';
     return;
   }
 
   function checkPalindrome(input) {
     const len = input.length;
-    for (let i = 0; i < len / 2; i++) {
+    for (let i = 0; i < len / 2; i += 1) {
       if (input[i] !== input[len - 1 - i]) {
         return false;
       }
@@ -37,7 +36,7 @@ document.getElementById('check-btn').addEventListener('click', function () {
       'result'
     ).textContent = `${userInput} is a palindrome`;
     result.style.backgroundColor = 'rgba(127, 231, 168, 0.7)';
-  } else {
+  }else {
     document.getElementById(
       'result'
     ).textContent = `${userInput} is not a palindrome`;
