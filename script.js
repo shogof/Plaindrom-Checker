@@ -1,5 +1,5 @@
-let checkBtn = document.getElementById("check-btn");
-let showResult = document.getElementById("show-result");
+const checkBtn = document.getElementById("check-btn");
+const showResult = document.getElementById("show-result");
 
 checkBtn.addEventListener("click", function () {
   const userInput = document
