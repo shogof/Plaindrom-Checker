@@ -13,6 +13,7 @@
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## Installation 💻
 
@@ -52,6 +53,7 @@ To use this project, follow these steps:
 
 - LinkedIn: [Shegofa Developer](www.linkedin.com/in/shegofa-developer-aa362030b)
 - Email: (shogofadeveloper12@gmail.com)
+- Github: [GitHub-Account](https://github.com/shogof)
 
 ## Contributing 🤝
 
