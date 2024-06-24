@@ -1,6 +1,6 @@
 const showResult = document.getElementById('show-result');
 const checkBtn = document.getElementById('check-btn');
-checkBtn.addEventListener('click', function btn () {
+checkBtn.addEventListener('click', () => {
   const userInput = document
     .getElementById('text-input')
     .value.trim()
