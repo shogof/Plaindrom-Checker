@@ -1,7 +1,6 @@
-const checkBtn = document.getElementById('check-btn');
 const showResult = document.getElementById('show-result');
 
-checkBtn.addEventListener('click', function () {
+document.getElementById.addEventListener('click', function () {
   const userInput = document
     .getElementById('text-input')
     .value.trim()
@@ -21,6 +20,8 @@ checkBtn.addEventListener('click', function () {
     return;
   }
 
+  const isPalindrome = checkPalindrome(cleanInput);
+  
   if (isPalindrome) {
     showResult.textContent = `${userInput} is a palindrome`;
     showResult.style.backgroundColor = 'rgba(127, 231, 168, 0.7)';
